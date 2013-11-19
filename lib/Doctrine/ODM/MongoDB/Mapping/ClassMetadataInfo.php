@@ -1671,12 +1671,11 @@ class ClassMetadataInfo implements \Doctrine\Common\Persistence\Mapping\ClassMet
 
     /**
      * @param string $fieldName
-     * @throws \BadMethodCallException Always throws exception.
      * @return bool
      */
     public function isAssociationInverseSide($fieldName)
     {
-        throw new \BadMethodCallException(__METHOD__ . '() is not implemented yet.');
+        return isset($this->associationMappings[$fieldName]) && ! $this->associationMappings[$fieldName]['isOwningSide'];
     }
 
     /**
