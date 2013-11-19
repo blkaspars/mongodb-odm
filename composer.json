@@ -1,5 +1,5 @@
 {
-    "name": "blkaspars/mongodb-odm",
+    "name": "doctrine/mongodb-odm",
     "type": "library",
     "description": "Doctrine MongoDB Object Document Mapper",
     "keywords": ["odm", "database", "persistence", "mongodb"],
